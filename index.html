@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vector Telemetry Research — IT/OT Boundary Assurance</title>
+<meta name="description" content="Evidence-based verification of IT/OT security boundaries for industrial environments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Exo+2:wght@400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#000;--fg:#e0e0e0;--green:#3fcf71;--dark-green:#1a3d28;--mid-green:#2d6e45;--surface:#0a0a0a;--surface2:#0a1a0f}
+body{background:var(--bg);color:var(--fg);font-family:'Exo 2',sans-serif;font-size:16px;line-height:1.6}
+a{color:var(--green);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+
+header{border-bottom:2px solid var(--green);padding:24px 0}
+.header-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.brand{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:24px;color:#fff;letter-spacing:2px}
+.brand span{color:var(--green)}
+.tagline{font-family:'Share Tech Mono',monospace;font-size:13px;color:var(--green);text-align:right}
+
+.hero{padding:80px 0 60px;text-align:center}
+.hero h1{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:42px;color:#fff;margin-bottom:24px;line-height:1.2}
+.hero h1 span{color:var(--green)}
+.hero p{font-size:18px;max-width:640px;margin:0 auto 32px;color:var(--fg)}
+.hero-cta{display:inline-block;background:var(--green);color:#000;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:16px;padding:12px 32px;border:none;letter-spacing:1px;text-transform:uppercase;transition:background .2s}
+.hero-cta:hover{background:#2ea85a;text-decoration:none}
+
+section{padding:60px 0}
+section h2{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:28px;color:var(--green);text-transform:uppercase;letter-spacing:1px;margin-bottom:24px;border-left:3px solid var(--green);padding-left:16px}
+
+.problem{background:var(--surface2);border-left:3px solid var(--green);padding:24px 28px;margin-bottom:40px;font-size:17px;color:#fff}
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+
+.card{background:var(--surface);border-left:2px solid var(--mid-green);padding:20px 24px}
+.card h3{font-family:'Share Tech Mono',monospace;font-size:14px;color:var(--green);margin-bottom:8px;text-transform:uppercase}
+.card p{font-size:15px;color:var(--fg)}
+
+.deliverables{list-style:none;padding:0}
+.deliverables li{background:var(--surface);border-left:2px solid var(--mid-green);padding:16px 20px;margin-bottom:8px}
+.deliverables li strong{font-family:'Share Tech Mono',monospace;font-size:13px;color:var(--green);display:block;margin-bottom:4px}
+
+.not-list{list-style:none;padding:0}
+.not-list li{padding:8px 0;font-size:15px}
+.not-list li::before{content:"\2715 ";color:#666;margin-right:8px}
+
+.cta-section{text-align:center;padding:60px 0;border-top:1px solid var(--dark-green)}
+.cta-section h2{border:none;text-align:center;padding:0}
+.cta-section p{margin:16px auto 24px;max-width:560px;font-size:16px}
+.contact-email{font-family:'Share Tech Mono',monospace;font-size:18px;color:var(--green)}
+
+footer{border-top:1px solid var(--dark-green);padding:20px 0;text-align:center;font-family:'Share Tech Mono',monospace;font-size:12px;color:#666}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container header-inner">
+<div class="brand">VECTOR <span>TELEMETRY</span> RESEARCH</div>
+<div class="tagline">IT/OT Boundary Assurance</div>
+</div>
+</header>
+
+<div class="container">
+
+<div class="hero">
+<h1>Does your IT/OT boundary <span>actually work</span> as you think it does?</h1>
+<p>We verify whether the security controls separating your corporate IT from your operational technology produce the behavior your architecture assumes.</p>
+<a href="#contact" class="hero-cta">Request a Pilot Verification</a>
+</div>
+
+<section>
+<h2>The Problem</h2>
+<div class="problem">
+Industrial organizations invest in firewalls, network segmentation, and access controls to separate IT from OT. The assumption is that these boundaries enforce the separation documented in the architecture diagrams. But assumptions are not evidence. VTR verifies what actually happens at the boundary.
+</div>
+
+<div class="grid">
+<div class="card">
+<h3>What we verify</h3>
+<p>Do your firewall rules match your architecture? Are there routes that bypass the documented separation? What traffic actually crosses the IT/OT boundary? If a control fails, what is observable and what is silent?</p>
+</div>
+<div class="card">
+<h3>How we work</h3>
+<p>We observe, document, and classify boundary behavior using a proprietary evidence-based methodology. Every finding is traceable. Every conclusion is limited to what the evidence supports.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Deliverables</h2>
+<ul class="deliverables">
+<li><strong>01 Boundary Map</strong>Documented inventory of every identified boundary point between IT and OT, including firewalls, VLANs, jump hosts, remote access paths, and management interfaces.</li>
+<li><strong>02 Verification Report</strong>For each boundary: what was expected, what was observed, and whether the separation property is preserved, divergent, or undetermined.</li>
+<li><strong>03 Action Plan</strong>Prioritized, practical recommendations that your team can implement with existing resources.</li>
+</ul>
+</section>
+
+<section>
+<h2>What we do not do</h2>
+<ul class="not-list">
+<li>We do not perform penetration testing</li>
+<li>We do not sell products or licenses</li>
+<li>We do not install software on your OT network</li>
+<li>We do not issue certifications</li>
+<li>We do not guarantee that your plant is secure</li>
+</ul>
+<p style="margin-top:16px;font-size:15px;color:#999">We deliver evidence. What you do with it is your decision.</p>
+</section>
+
+<section>
+<h2>Pilot Verification</h2>
+<div class="problem">
+We verify one boundary point in your environment in five business days. You receive all three deliverables for that point. No commitment beyond the pilot. If the findings are useful, we discuss the full scope.
+</div>
+</section>
+
+<section class="cta-section" id="contact">
+<h2>Start a Conversation</h2>
+<p>If you want to know whether your IT/OT boundary works as your architecture says it does, contact us.</p>
+<a href="mailto:ing.castellanosdz@gmail.com" class="contact-email">ing.castellanosdz@gmail.com</a>
+<p style="margin-top:24px;font-size:14px;color:#666">On-site across Mexico's industrial corridors. Remote engagements available worldwide.</p>
+</section>
+
+</div>
+
+<footer>
+<div class="container">
+Vector Telemetry Research &middot; Tampico, Tamaulipas, M&eacute;xico &middot; 2026
+</div>
+</footer>
+
+</body>
+</html>
